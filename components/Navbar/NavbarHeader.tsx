@@ -1,6 +1,6 @@
 import { Heading } from '@chakra-ui/react'
 
-const Header = ({ title }: { title: string }) => (
+const NavbarHeader = ({ title }: { title: string }) => (
   <Heading
     as='h1'
     fontFamily='body'
@@ -12,4 +12,4 @@ const Header = ({ title }: { title: string }) => (
   </Heading>
 )
 
-export default Header
+export default NavbarHeader

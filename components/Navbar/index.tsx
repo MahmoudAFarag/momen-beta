@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { Flex, Box, Heading } from '@chakra-ui/react'
+import { Flex, Box } from '@chakra-ui/react'
 import { Twirl as Hamburger } from 'hamburger-react'
 import NavbarLink from './NavbarLink'
 import MobileLinks from './MobileLinks'
-import Header from './Header'
+import NavbarHeader from './NavbarHeader'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
@@ -16,7 +16,7 @@ const Navbar = () => {
           <NavbarLink name='About' href='/about' />
         </Box>
 
-        <Header title="Mo'men Gallery" />
+        <NavbarHeader title="Mo'men Gallery" />
 
         <Box display={{ base: 'none', md: 'inline-block' }}>
           <NavbarLink name='Showcase' href='/' />
