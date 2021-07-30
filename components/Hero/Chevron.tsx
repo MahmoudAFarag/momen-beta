@@ -1,9 +1,9 @@
 import { Flex, Icon } from '@chakra-ui/react'
-import { HiChevronDoubleDown } from 'react-icons/hi'
+import { FiChevronsDown } from '@react-icons/all-files/fi/FiChevronsDown'
 
 const Chevron = () => (
   <Flex justifyContent='center' mt={{ md: '3rem' }}>
-    <Icon as={HiChevronDoubleDown} fontSize='5rem' fill='salmon' cursor='pointer' />
+    <Icon as={FiChevronsDown} fontSize='5rem' color='salmon' cursor='pointer' />
   </Flex>
 )
 

@@ -1,12 +1,14 @@
 import NextLink from 'next/link'
-import { Link as ChakraLink } from '@chakra-ui/react'
+import { Icon, Link as ChakraLink } from '@chakra-ui/react'
+import { IconType } from '@react-icons/all-files/lib'
 
 interface Props {
   name: string
   href: string
+  icon?: IconType
 }
 
-const NavbarLink = ({ name, href }: Props) => {
+const NavbarLink = ({ name, href, icon }: Props) => {
   return (
     <NextLink href={href}>
       <ChakraLink
@@ -20,6 +22,7 @@ const NavbarLink = ({ name, href }: Props) => {
         _notLast={{ mr: { base: '0', md: '9rem' } }}
       >
         {name}
+        {icon && <Icon as={icon} ml='1rem' />}
       </ChakraLink>
     </NextLink>
   )

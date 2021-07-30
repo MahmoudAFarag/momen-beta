@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Flex, Box } from '@chakra-ui/react'
+import { Flex, Box, Icon } from '@chakra-ui/react'
 import { Twirl as Hamburger } from 'hamburger-react'
+import { FaPhoneAlt } from '@react-icons/all-files/fa/FaPhoneAlt'
 import NavbarLink from './NavbarLink'
 import MobileLinks from './MobileLinks'
 import NavbarHeader from './NavbarHeader'
@@ -19,8 +20,8 @@ const Navbar = () => {
         <NavbarHeader title="Mo'men Gallery" />
 
         <Box display={{ base: 'none', md: 'inline-block' }}>
-          <NavbarLink name='Showcase' href='/' />
-          <NavbarLink name='Contact' href='/about' />
+          <NavbarLink name='Showcase' href='/showcase' />
+          <NavbarLink name='Contact' href='/contact' icon={FaPhoneAlt} />
         </Box>
 
         <Box display={{ base: 'inline-block', md: 'none' }} mr={{ base: '1.5rem', md: '0' }}>

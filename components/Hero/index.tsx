@@ -11,7 +11,7 @@ const Hero = () => {
           <HeroHeader title="Mo'men" />
           <HeroHeader title='Designs' />
           <Text fontSize={{ base: '1.9rem', md: '2.3rem' }} mt='2rem' width='27ch'>
-            Where ideas and imaginations are not abstract
+            Where ideas and imaginations are not abstract.
           </Text>
         </Box>
         <HeroImage />
