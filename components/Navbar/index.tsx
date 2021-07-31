@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Flex, Box, Icon } from '@chakra-ui/react'
+import { Flex, Box } from '@chakra-ui/react'
 import { Twirl as Hamburger } from 'hamburger-react'
 import { FaPhoneAlt } from '@react-icons/all-files/fa/FaPhoneAlt'
 import NavbarLink from './NavbarLink'
@@ -17,7 +17,7 @@ const Navbar = () => {
           <NavbarLink name='About' href='/about' />
         </Box>
 
-        <NavbarHeader title="Mo'men Gallery" />
+        <NavbarHeader title="Mo'men Gallery" href='/' />
 
         <Box display={{ base: 'none', md: 'inline-block' }}>
           <NavbarLink name='Showcase' href='/showcase' />
@@ -25,7 +25,7 @@ const Navbar = () => {
         </Box>
 
         <Box display={{ base: 'inline-block', md: 'none' }} mr={{ base: '1.5rem', md: '0' }}>
-          <Hamburger toggled={isOpen} toggle={setOpen} />
+          <Hamburger toggled={isOpen} toggle={setOpen} rounded label='Navbar Hamburger menu' />
         </Box>
       </Flex>
       <MobileLinks isOpen={isOpen} />

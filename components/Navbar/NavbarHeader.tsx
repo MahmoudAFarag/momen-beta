@@ -1,6 +1,7 @@
 import { Heading } from '@chakra-ui/react'
+import NextLink from 'next/link'
 
-const NavbarHeader = ({ title }: { title: string }) => (
+const NavbarHeader = ({ title, href }: { title: string; href: string }) => (
   <Heading
     as='h1'
     fontFamily='body'
@@ -8,7 +9,7 @@ const NavbarHeader = ({ title }: { title: string }) => (
     fontWeight='900'
     ml={{ base: '1.5rem', md: '0' }}
   >
-    {title}
+    <NextLink href={href}>{title}</NextLink>
   </Heading>
 )
 

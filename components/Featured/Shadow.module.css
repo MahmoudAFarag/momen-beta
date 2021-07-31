@@ -1,0 +1,27 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay > div {
+  transition: opacity 0.2s ease-out;
+}
+
+.overlay > button {
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+.overlay:hover > div {
+  opacity: 0.3;
+}
+
+.overlay:hover > button {
+  opacity: 1;
+}

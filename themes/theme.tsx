@@ -22,6 +22,7 @@ const theme = extendTheme({
   colors: {
     black: '#16161D',
     salmon: '#ef9273',
+    blueCyan: '#01cec0',
   },
 })
 

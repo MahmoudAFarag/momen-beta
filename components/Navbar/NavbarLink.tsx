@@ -18,7 +18,11 @@ const NavbarLink = ({ name, href, icon }: Props) => {
         borderRadius='3px'
         padding='1.5rem 2rem'
         transition='background-color 0.2s ease-in-out, color 0.2s ease-in-out'
-        _hover={{ textDecor: 'none', bg: { base: 'none', md: 'salmon' }, color: { md: '#fff' } }}
+        _hover={{
+          textDecor: 'none',
+          bg: { base: 'none', md: 'salmon' },
+          color: { md: '#fff' },
+        }}
         _notLast={{ mr: { base: '0', md: '9rem' } }}
       >
         {name}
