@@ -35,6 +35,7 @@ const Footer = () => {
         display={{ base: 'none', md: 'inline-block' }}
         fontSize={{ base: '1.4rem', md: '1.6rem' }}
       >
+        {/* eslint-disable-next-line */}
         &copy; Copyright {new Date().getFullYear()}, Mo'men Designs
       </Text>
       <Flex align='center' fontSize={{ base: '2rem', md: '2.5rem' }}>
