@@ -33,8 +33,8 @@ const DesignImage = ({ imgSrc, title }: Props) => {
         size='lg'
         fontSize='1.5rem'
         position='absolute'
-        left={{ base: '28%', md: '33%' }}
-        top='45%'
+        left={{ base: '22%', md: '33%' }}
+        top={{ base: '40%', md: '45%' }}
         rightIcon={<FaTh />}
       >
         Explore Design

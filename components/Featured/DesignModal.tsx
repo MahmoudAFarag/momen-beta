@@ -1,5 +1,4 @@
 import NextImage from 'next/image'
-import { useState } from 'react'
 import {
   Button,
   Modal,
@@ -9,7 +8,6 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  Spinner,
 } from '@chakra-ui/react'
 
 interface Props {
@@ -20,8 +18,6 @@ interface Props {
 }
 
 const DesignModal = ({ isOpen, onClose, title, imgSrc }: Props) => {
-  const [loading, isLoading] = useState(true)
-
   return (
     <Modal isOpen={isOpen} onClose={onClose} size='6xl' isCentered>
       <ModalOverlay />
@@ -31,7 +27,6 @@ const DesignModal = ({ isOpen, onClose, title, imgSrc }: Props) => {
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          {loading && <Spinner size='xl' position='absolute' left='50%' />}
           <NextImage
             src={imgSrc}
             alt='placeholder Image'
@@ -40,7 +35,6 @@ const DesignModal = ({ isOpen, onClose, title, imgSrc }: Props) => {
             width='1280'
             height='720'
             className='rounded'
-            onLoad={() => isLoading(false)}
           />
         </ModalBody>
 
