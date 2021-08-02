@@ -14,6 +14,7 @@ const Featured = ({ designs }: { designs: Props[] }) => {
   return (
     <Box mt='4rem' data-aos='zoom-in-up'>
       <FeaturedHeader />
+
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6} mt='1rem' p='2rem'>
         {designs.map(design => (
           <DesignImage key={design.id} title={design.title} imgSrc={design.design_img.url} />

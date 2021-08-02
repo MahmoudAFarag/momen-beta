@@ -28,10 +28,15 @@ const SocialData = [
 const Footer = () => {
   return (
     <Flex height='6rem' align='center' justify='space-between' p='2rem' borderTop='1px solid teal'>
-      <Box display={{ base: 'none', md: 'inline-block' }}>
+      <Box>
         <NextImage src={FooterPNG} alt='Footer Image' width='90' height='40' className='rounded' />
       </Box>
-      <Text fontSize={{ base: '1.4rem', md: '1.6rem' }}>Made with ❤️ for Momen</Text>
+      <Text
+        display={{ base: 'none', md: 'inline-block' }}
+        fontSize={{ base: '1.4rem', md: '1.6rem' }}
+      >
+        &copy; Copyright {new Date().getFullYear()}, Mo'men Designs
+      </Text>
       <Flex align='center' fontSize={{ base: '2rem', md: '2.5rem' }}>
         {SocialData.map(social => (
           <FooterLink
