@@ -8,9 +8,10 @@ import DesignModal from './DesignModal'
 interface Props {
   imgSrc: string
   title: string
+  publishedAt: string
 }
 
-const DesignImage = ({ imgSrc, title }: Props) => {
+const DesignImage = ({ imgSrc, title, publishedAt }: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
@@ -39,7 +40,13 @@ const DesignImage = ({ imgSrc, title }: Props) => {
       >
         Explore Design
       </Button>
-      <DesignModal isOpen={isOpen} onClose={onClose} title={title} imgSrc={imgSrc} />
+      <DesignModal
+        isOpen={isOpen}
+        onClose={onClose}
+        title={title}
+        imgSrc={imgSrc}
+        publishedAt={publishedAt}
+      />
     </Box>
   )
 }

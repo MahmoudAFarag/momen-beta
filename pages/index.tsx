@@ -9,6 +9,7 @@ import Featured from '../components/Featured'
 interface Props {
   title: string
   id: string
+  publishedAt: string
   design_img: {
     url: string
   }
