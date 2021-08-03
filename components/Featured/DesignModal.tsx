@@ -47,7 +47,7 @@ const DesignModal = ({ isOpen, onClose, title, imgSrc, publishedAt }: Props) => 
           />
           <Flex direction='column' align='center' p='2rem'>
             <Text textTransform='uppercase' mb='2rem' fontSize='1.9rem' fontWeight='700'>
-              Floating Astronaut
+              {title}
             </Text>
             <Flex align='center' w='100%' mt={{ base: '2rem', md: '0' }}>
               <Tag colorScheme='green' p='1rem' mr='auto'>
