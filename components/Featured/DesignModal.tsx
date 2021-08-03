@@ -22,19 +22,16 @@ interface Props {
   title: string
   imgSrc: string
   publishedAt: string
+  category: string
 }
 
-const DesignModal = ({ isOpen, onClose, title, imgSrc, publishedAt }: Props) => {
+const DesignModal = ({ isOpen, onClose, title, imgSrc, publishedAt, category }: Props) => {
   const date = parseISO(publishedAt)
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} size='6xl' isCentered>
       <ModalOverlay />
       <ModalContent>
-        {/* <ModalHeader fontSize='2rem' textTransform='uppercase'>
-          {title}
-        </ModalHeader>
-        <ModalCloseButton /> */}
         <ModalBody mt='2rem'>
           <NextImage
             src={imgSrc}
@@ -53,7 +50,7 @@ const DesignModal = ({ isOpen, onClose, title, imgSrc, publishedAt }: Props) => 
               <Tag colorScheme='green' p='1rem' mr='auto'>
                 <Icon as={RiLightbulbLine} fontSize='2rem' />
                 <TagLabel ml='1rem' fontSize='1.4rem' fontWeight='700'>
-                  Banner
+                  {category}
                 </TagLabel>
               </Tag>
               <Text fontSize='1.5rem'>

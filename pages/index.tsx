@@ -10,6 +10,7 @@ interface Props {
   title: string
   id: string
   publishedAt: string
+  category: string
   design_img: {
     url: string
   }

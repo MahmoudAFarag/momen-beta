@@ -6,6 +6,7 @@ interface Props {
   title: string
   id: string
   publishedAt: string
+  category: string
   design_img: {
     url: string
   }
@@ -23,6 +24,7 @@ const Featured = ({ designs }: { designs: Props[] }) => {
             title={design.title}
             imgSrc={design.design_img.url}
             publishedAt={design.publishedAt}
+            category={design.category}
           />
         ))}
       </SimpleGrid>

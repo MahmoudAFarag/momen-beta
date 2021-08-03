@@ -9,9 +9,10 @@ interface Props {
   imgSrc: string
   title: string
   publishedAt: string
+  category: string
 }
 
-const DesignImage = ({ imgSrc, title, publishedAt }: Props) => {
+const DesignImage = ({ imgSrc, title, publishedAt, category }: Props) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
@@ -46,6 +47,7 @@ const DesignImage = ({ imgSrc, title, publishedAt }: Props) => {
         title={title}
         imgSrc={imgSrc}
         publishedAt={publishedAt}
+        category={category}
       />
     </Box>
   )
